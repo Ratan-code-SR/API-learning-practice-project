@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="md:container mx-auto p-5">
+    <header>
+        <!-- heading section -->
+        <section>
+            <div id="header-container" class="py-5 bg-gray-400 text-center px-3 flex items-center gap-5 justify-center">
+               
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- input search -->
+        <div class="flex justify-center items-center gap-3 m-5">
+            <input id="input-value" type="text" placeholder="Search news here....." class="input input-bordered w-full max-w-xs" />
+            <button onclick="handleSearch()" class="btn btn-warning text-white">Search</button>
+        </div>
+
+        <!-- news section here -->
+        <hr>
+        <div id="loadingSpinner" class="text-center py-10 hidden">
+            <span class="loading loading-spinner text-neutral"></span> 
+        </div>
+        <section>
+            <div id="card-container">
+               
+            </div>
+        </section>
+       
+    </main>
+    <footer></footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
